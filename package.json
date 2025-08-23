@@ -1,0 +1,33 @@
+{
+  "name": "fetchit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbduboriyAhmadjonov/FetchIt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AbduboriyAhmadjonov/FetchIt/issues"
+  },
+  "homepage": "https://github.com/AbduboriyAhmadjonov/FetchIt#readme",
+  "dependencies": {
+    "axios": "^1.11.0",
+    "cheerio": "^1.1.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.1",
+    "helmet": "^8.1.0",
+    "html-minifier-terser": "^7.2.0",
+    "nodemon": "^3.1.10",
+    "puppeteer": "^24.17.0"
+  }
+}
