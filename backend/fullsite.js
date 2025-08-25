@@ -49,17 +49,17 @@ if (!URL) throw new Error('Usage: node fullsite.js <url>');
   });
 
   // 4. Cheerio extras
-  // const $ = cheerio.load(fullHtml);
+  const $ = cheerio.load(fullHtml);
   // const meta = {
   //   title: $('title').text().trim(),
   //   description: $('meta[name="description"]').attr('content'),
   // };
-  // const links = $('a[href]')
-  //   .map((_, a) => ({
-  //     text: $(a).text().trim(),
-  //     href: $(a).attr('href'),
-  //   }))
-  //   .get();
+  const links = $('a[href]')
+    .map((_, a) => ({
+      text: $(a).text().trim(),
+      href: $(a).attr('href'),
+    }))
+    .get();
   // const images = $('img[src]')
   //   .map((_, img) => ({
   //     src: $(img).attr('src'),
